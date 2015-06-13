@@ -1,7 +1,5 @@
 <?
-	// Copyright (c) 2006-2009, Wade Alcorn 
-	// All Rights Reserved
-	// wade@bindshell.net - http://www.bindshell.net
+
 	
 	// if check_install.inc.php works this should exist
 	require_once("check_install.inc.php");

@@ -1,7 +1,5 @@
 <?
-	// Copyright (c) 2006-2009, Wade Alcorn 
-	// All Rights Reserved
-	// wade@bindshell.net - http://www.bindshell.net
+
 
 	require_once("../include/globals.inc.php");
 	require_once("../include/browserdetection.inc.php");

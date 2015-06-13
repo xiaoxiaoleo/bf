@@ -1,7 +1,5 @@
 <?
-	// Copyright (c) 2006-2009, Wade Alcorn 
-	// All Rights Reserved
-	// wade@bindshell.net - http://www.bindshell.net
+
 
 	// ---[ GET_MODULE_BUTTONS_HTML
 	// usage: get_module_button_html(button name/lable, browser request path)

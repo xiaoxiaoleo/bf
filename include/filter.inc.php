@@ -1,9 +1,5 @@
-<?
-	// Copyright (c) 2006-2009, Wade Alcorn 
-	// All Rights Reserved
-	// wade@bindshell.net - http://www.bindshell.net
-
-		function valid_ip($ip) {		
+<?php
+	function valid_ip($ip) {		
 		return filter_var($ip, FILTER_VALIDATE_IP);
 	}
 

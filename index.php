@@ -5,9 +5,8 @@
 <?php
 	require_once("include/browserdetection.inc.php");
 	require_once("include/filter.inc.php");
-
-
 ?>
+
 <?php
     error_reporting(E_ALL);
 

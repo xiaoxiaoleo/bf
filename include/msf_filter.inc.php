@@ -1,4 +1,4 @@
-<?
+<?php
 
 
     require_once("filter.inc.php");

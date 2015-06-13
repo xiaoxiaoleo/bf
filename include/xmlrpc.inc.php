@@ -2097,11 +2097,11 @@ xmlrpc_encode_entitites($this->errstr, $GLOBALS['xmlrpc_internalencoding'], $cha
 		{
 			if ($charset_encoding != '')
 			{
-				return "<?xml version=\"1.0\" encoding=\"$charset_encoding\" ?" . ">\n<methodCall>\n";
+				return "<?phpxml version=\"1.0\" encoding=\"$charset_encoding\" ?" . ">\n<methodCall>\n";
 			}
 			else
 			{
-				return "<?xml version=\"1.0\"?" . ">\n<methodCall>\n";
+				return "<?phpxml version=\"1.0\"?" . ">\n<methodCall>\n";
 			}
 		}
 

@@ -1,4 +1,4 @@
-<?
+<?php
 	include ('pw.php');
     require_once("include/filter.inc.php");
 
@@ -46,7 +46,7 @@
 	 	
 		// check permissions on the include and cache
 		if((is_writable($config_file) || is_writable($config_file_dir)) && is_writable($cache_dir)) {
-			$rtn = file_put_contents($config_file, "<?\n" . $base_dir . $beef_domain . $log_file . $summary_log_file . "?>\n");
+			$rtn = file_put_contents($config_file, "<?php\n" . $base_dir . $beef_domain . $log_file . $summary_log_file . "?>\n");
 
 		 	// create log file
 		 	touch($raw_log_file);
@@ -56,7 +56,7 @@
 			<h2>BeEF Successfuly Configured</h2>
 
 			<form name="configform">
-				<input class="button" type="button" value="Finished" onClick="javascript:location.href='<? echo $config ?>ui'"/>
+				<input class="button" type="button" value="Finished" onClick="javascript:location.href='<?php echo $config ?>ui'"/>
 			</form>
 <?php
 		} else {
@@ -66,12 +66,12 @@
 				following command will correct the problem: <br>
 				# chown <?php printf(get_current_user() . " " . getcwd() . '/include' ) ?><br>
 				# chown -R <?php printf(get_current_user() . " " . getcwd() . '/cache' ) ?><br>
-<?
+<?php
 			}
 	} else { // the password was incorrect
 ?>
 		<h2>Password</h2>
 		Incorrect BeEF password, please try again.
-<?
+<?php
 	}
 ?>

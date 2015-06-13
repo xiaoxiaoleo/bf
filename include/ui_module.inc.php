@@ -1,4 +1,4 @@
-<?
+<?php
 
 
 	// ---[ GET_MODULE_BUTTONS_HTML

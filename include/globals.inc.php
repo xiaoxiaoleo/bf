@@ -1,4 +1,4 @@
-<?
+<?php
 
 	
 	// if check_install.inc.php works this should exist

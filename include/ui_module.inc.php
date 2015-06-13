@@ -23,6 +23,7 @@
 
 	// --[ GET_STANDARD_MODULE_MENU
 	function get_standard_module_menu() {
+     	$menu_str="";
  		$menu_str .= get_module_menu(MODULE_STANDARD_DIR, MODULE_STANDARD_SUBDIR);
 		return $menu_str;
 	}

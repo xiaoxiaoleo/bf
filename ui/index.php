@@ -1,7 +1,5 @@
 <?php
-	// Copyright (c) 2006-2009, Wade Alcorn 
-	// All Rights Reserved
-	// wade@bindshell.net - http://www.bindshell.net
+
 
 	session_start();
 	require_once("../include/check_install.inc.php");

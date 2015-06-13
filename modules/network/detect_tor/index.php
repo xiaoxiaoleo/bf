@@ -1,7 +1,5 @@
 <?php
-	// Copyright (c) 2006-2009, Wade Alcorn 
-	// All Rights Reserved
-	// wade@bindshell.net - http://www.bindshell.net
+
 
 	// Module by: Joshua "Jabra" Abraham   <jabra@spl0it.org>
 	// http://blog.spl0it.org

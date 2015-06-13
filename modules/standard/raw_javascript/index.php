@@ -1,7 +1,5 @@
 <?php
-	// Copyright (c) 2006-2009, Wade Alcorn 
-	// All Rights Reserved
-	// wade@bindshell.net - http://www.bindshell.net
+
 	// beef.20.alfa@spamgourmet.com
 
 	require_once("../../../include/common.inc.php"); // included for get_b64_file()

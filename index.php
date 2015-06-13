@@ -1,17 +1,15 @@
-<?
-	// Copyright (c) 2006-2009, Wade Alcorn 
-	// All Rights Reserved
-	// wade@bindshell.net - http://www.bindshell.net
-?>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 
 <?php
-
 	require_once("include/browserdetection.inc.php");
 	require_once("include/filter.inc.php");
+
+
+?>
+<?php
+    error_reporting(E_ALL);
 
 	// set the menu css based upon user agent
 	$browser_ua = browser($_SERVER['HTTP_USER_AGENT']);

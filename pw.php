@@ -1,3 +1,3 @@
 <?
-$passwd = 'BeEFConfigPass';
+$passwd = 'admin';
 ?>

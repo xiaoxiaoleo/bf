@@ -67,7 +67,7 @@
 	<div id="sidebar">
 		<!-- BEEF HEADER - LINK AND IMAGE-->
 		<div id="header">
-			<center><a href=http://www.bindshell.net/tools/beef/>Browser Exploitation Framework</a></center>
+			<center><a href=#>Browser Exploitation Framework</a></center>
 			<h1><div id="beef_icon"><img src="images/beef.gif" onclick="new Effect.Shake('sidebar');"></div> BeEF</h1>
 		</div>
 
@@ -106,7 +106,7 @@
         				<form name="configform">
                 				<div id="module_subsection_header">Connection (IP Address or URL)</div>
 						This is the location that the zombies will connect to (do not include the hook directory). This must match the 'ServerName' value in your http.conf for the modules to work.
-                				<input type="text" name="url" value="<? echo $url; ?>" autocomplete="off"/>
+                				<input type="text" name="url" value="<?php echo $url; ?>" autocomplete="off"/>
                 				BeEF configuration password
                 				<input type="password" name="passwd" value="BeEFConfigPass" autocomplete="off"/>
                 				<input class="button" type="button" value="Apply Config" onClick="javascript:submit_config(configform.url.value, configform.passwd.value)"/>

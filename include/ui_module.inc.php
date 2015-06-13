@@ -30,18 +30,21 @@
 
 	// --[ GET_BROWSER_MODULE_MENU
 	function get_browser_module_menu() {
+	    $menu_str="";
  		$menu_str .= get_module_menu(MODULE_BROWSER_DIR, MODULE_BROWSER_SUBDIR);
 		return $menu_str;
 	}
 
 	// --[ GET_BROWSER_MODULE_MENU
 	function get_network_module_menu() {
+	    $menu_str="";
  		$menu_str .= get_module_menu(MODULE_NETWORK_DIR, MODULE_NETWORK_SUBDIR);
 		return $menu_str;
 	}
 
 	// --[ GET_INTERPROTOCOL_MODULE_MENU
 	function get_interprotocol_module_menu() {
+	    $menu_str="";
  		$menu_str .= get_module_menu(MODULE_INTERPROTOCOL_DIR, MODULE_INTERPROTOCOL_SUBDIR);
 		return $menu_str;
 	}

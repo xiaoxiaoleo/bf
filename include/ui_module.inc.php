@@ -59,7 +59,8 @@
 			// get module name from file
 			$name = file_get_contents($dirname . '/' . MODULE_NAME_FILENAME);
 			// create html module buttons
-			$result .= get_module_menu_item_html(trim($name), "/beef/modules/". $module_subdir . "/" . basename($dirname));
+			
+			$result .= get_module_menu_item_html(trim($name), "/bf/modules/". $module_subdir . "/" . basename($dirname));
 		}
 		return $result;
 	}

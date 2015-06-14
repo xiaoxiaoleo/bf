@@ -62,10 +62,10 @@
 ?>
 
 	<script>
- 		var zl  = new ZombieList(<?php= HEARTBEAT_FREQUENCY ?>);
+ 		var zl  = new ZombieList(<?php echo HEARTBEAT_FREQUENCY; ?>);
  		var ar  = new Autorun();
- 		var mod = new Module(<?php= HEARTBEAT_FREQUENCY ?>);
- 		var log = new Log(<?php= SUMMARY_LOG_HEARTBEAT_FREQUENCY ?>);
+ 		var mod = new Module(<?php echo  HEARTBEAT_FREQUENCY; ?>);
+ 		var log = new Log(<?php echo SUMMARY_LOG_HEARTBEAT_FREQUENCY; ?>);
 
 		var beefPeriodicalExecuter = true;
  		var peZ = new PeriodicalExecuter(function(pe) { if (beefPeriodicalExecuter) { zl.heartbeat();  } else { if (pe) { pe.stop();} } }, zl.frequency);
@@ -95,7 +95,7 @@
 			display_zombie_section();
 		}
 
-		// ---[ SEND_CODE
+		// ---[ SEND_CODE 发送代码
 		function do_send(code) {
 			zl.send_code(code);
 		}

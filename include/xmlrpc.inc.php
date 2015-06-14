@@ -3534,14 +3534,7 @@ xmlrpc_encode_entitites($this->errstr, $GLOBALS['xmlrpc_internalencoding'], $cha
 		}
 	}
 
-	/**
-	* decode a string that is encoded w/ "chunked" transfer encoding
-	* as defined in rfc2068 par. 19.4.6
-	* code shamelessly stolen from nusoap library by Dietrich Ayala
-	*
-	* @param string $buffer the string to be decoded
-	* @return string
-	*/
+	
 	function decode_chunked($buffer)
 	{
 		// length := 0

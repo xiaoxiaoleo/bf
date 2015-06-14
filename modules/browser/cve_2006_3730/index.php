@@ -5,25 +5,7 @@
 	DEFINE('JS_FILE', './template.js');
 ?>
 
-<!--
 
-BeEF: the following is the boiler plate from the exploit
-
-..::[ jamikazu presents ]::..
-
-Microsoft Internet Explorer WebViewFolderIcon (setSlice) Exploit (0day)
-Works on all Windows XP versions including SP2
-
-Author: jamikazu 
-Mail: jamikazu@gmail.com
-
-Bug discovered by Computer H D Moore (http://www.metasploit.com)
-
-Credit: metasploit, SkyLined
-
-invokes calc.exe if successful 
-
--->
 
 <script>
 

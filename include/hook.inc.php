@@ -7,10 +7,11 @@
 	// --[ EXTRACT_OS
 	function extract_os() {
 		$user_parts = explode(";", $_SERVER['HTTP_USER_AGENT']);
-
-		$os = trim($user_parts[2]);
+        //echo  $_SERVER['HTTP_USER_AGENT'];
+		//var_dump($user_parts);
+		$os = trim($user_parts[0]);
 		$os = str_replace(')', '', $os);
-
+        //echo "======".$os;
 		return $os;		
 	}
 

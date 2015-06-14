@@ -1,12 +1,8 @@
 <?php
-	// Copyright (c) 2009, Wade Alcorn 
-	// All Rights Reserved
-	// wade@bindshell.net - http://www.bindshell.net
-
 	require_once("../../../include/common.inc.php");
 ?>
 
-beef_url = "<?php= BEEF_DOMAIN; ?>";
+beef_url = "<?php echo BEEF_DOMAIN; ?>";
 
 // ---[ RETURN_RESULT
 // send result to beef

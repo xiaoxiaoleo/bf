@@ -44,9 +44,6 @@
 	}
 	
 ?>
-	<title>Browser Exploitation Framework</title>
-
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<script src="../js/prototype.js" type="text/javascript"></script>
 	<script src="../js/scriptaculous.js" type="text/javascript"></script>
 	<script src="../js/common.js" type="text/javascript"></script>
@@ -246,14 +243,6 @@
 
 	<!-- SIDEBAR -->
 	<div id="sidebar">
-		<!-- BEEF HEADER - LINK AND IMAGE-->
-		<div id="header">
-			<div id="beefheading">
-				<center><a href=http://www.bindshell.net/tools/beef/>Browser Exploitation Framework</a></center>
-			</div>
-			<h1><div id="beef_icon">
-				<img src="../images/beef.gif" onclick="new Effect.Shake('sidebar');"></div> BeEF</h1>
-			</div>
 
 		<!-- AUTORUN -->
         <div id="sidebar_autorun">

@@ -1,6 +1,8 @@
 <?php
 
+	error_reporting(E_ALL);
 	
+
 	// if check_install.inc.php works this should exist
 	require_once("check_install.inc.php");
 	require_once("config.inc.php");

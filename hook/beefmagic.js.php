@@ -1,9 +1,9 @@
 <?php
 
-
 	require_once("../include/globals.inc.php");
 	require_once("../include/common.inc.php");
 	require_once("../include/hook.inc.php");
+	require_once("../include/config.inc.php");
 
     session_name(SESSION_NAME);
     session_start();
@@ -21,7 +21,7 @@ if (window.attachEvent)
 else if (window.addEventListener) 
         window.addEventListener('load', beef_onload, 0);
 
-beef_url = "<?php= BEEF_DOMAIN; ?>";
+beef_url = <?php echo BEEF_DOMAIN;?>;
 
 // ---[ IS_XUL_CHROME
 // determing if we are in chrome (privileged browser zone)

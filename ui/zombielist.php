@@ -1,5 +1,4 @@
 <?php
-
 	session_start();
 	require_once("../include/check_install.inc.php");
 	require_once("../include/globals.inc.php");
@@ -173,17 +172,49 @@
 	<div id="pageheader">
 		<!-- MENU -->
 		<div class="menu">
+				<ul> <!-- VIEW MENU -->
+				<li><a href="#">View</a>
+					<ul>
+					<li><a href="#" onClick="open_window('../hook/example.php', 'Zombie');">Spawn Zombie Example</a></li>
+					<li><a href="#" onClick="display_general('log.php');">Display Raw Log</a></li>
+					<li><a href="#" onClick="clearlog();">Clear Main Logs</a></li>
+					<li><a href="#" id="zombie_view_menu" onclick="toggle_slide_div('sidebar_zombie','zombie_view_menu');">Hide Sidebar Zombies</a></li>
+					<li><a href="#" id="autorun_view_menu" onclick="toggle_slide_div('sidebar_autorun','autorun_view_menu');">Hide Sidebar Autorun</a></li>
+					</ul>
+				</li>
+			</ul>
 			
+		
+			<ul> <!-- ZOMBIES MENU -->
+				<li><a href="#">机器列表</a>
+					<ul>
+					<div id="zombie_menu"><li><a href="#" >Checking for Zombies...</a></li></div>
+					</ul>
+				</li>
+			</ul>
 			<ul> <!-- STANDARD MODULES MENU -->
-				<li><a href="#">所有模块</a>
+				<li><a href="#">Standard Modules</a>
 					<ul>
 					<?php echo get_standard_module_menu() ?>
+					</ul>
+				</li>
+			</ul>
+			<ul> <!-- BROWSER MENU -->
+				<li><a href="#">Browser Modules</a>
+					<ul>
+					<?php echo get_browser_module_menu() ?>
+					</ul>
+				</li>
+			</ul>
+			<ul> <!-- NETWORK MENU -->
+				<li><a href="#">Network Modules</a>
+					<ul>
 					<?php echo get_network_module_menu() ?>
 					</ul>
 				</li>
 			</ul>
 			<ul> <!-- OPTIONS MENU -->
-				<li><a href="#">选项</a>
+				<li><a href="#">Options</a>
 					<ul>
 					<li><a href="#" onclick="javascript:ar.disable();">Disable Autorun</a></li>
 					<li><a href="#" id="start_exec_menu" onclick="start_executer();">Start Server Polling</a></li>
@@ -192,18 +223,36 @@
 				</li>
 			</ul>
 			<ul> <!-- HELP MENU -->
-				<li><a href="#" onClick="display_general('exampleusage.php')">演示</a>
+				<li><a href="#">Help</a>
+					<ul>
+					<li><a href="#" onClick="display_general('help.php')">Local Help</a></li>
+					<li><a href="#" onClick="display_general('exampleusage.php')">Example Usage</a></li>
+					<li><a href="#" onClick="display_general('thanks.php')">Thanks</a></li>
+					<li><a href="#" onClick="display_general('about.php')">About</a></li>
+					</ul>
 				</li>
 			</ul>
 		</div>
 	</div> 
-	
+
+
 	<!-- SIDEBAR -->
 	<div id="sidebar">
+
+		<!-- AUTORUN -->
+        <div id="sidebar_autorun">
+	        <div id="header" onclick="new Effect.Pulsate('zombiesdyn');">
+				<h2>Autorun</h2>
+        	</div>
+        	<div id="content"> <!-- DYNAMIC AUTORUN SECTION -->
+				<div id="autorun_dyn">Disabled</div>
+        	</div>
+		</div>
+
 		<!-- ZOMBIES -->
         <div id="sidebar_zombie">
 	        <div id="header" onclick="new Effect.Pulsate('zombiesdyn');">
-				<h2>机器列表</h2>
+				<h2>Zombies</h2>
         	</div>
         	<div id="content"> <!-- DYNAMIC ZOMBIE SECTION -->
 				<div id="zombiesdyn">Checking...</div>
@@ -390,7 +439,7 @@
 
 	<script>
 		// display start page
-		display_general('exampleusage.php');
+		display_general('about.php');
 		toggle_slide_div('zombie_subsection_page_content','zombie_page_content_header');
 	</script> 
 </body>

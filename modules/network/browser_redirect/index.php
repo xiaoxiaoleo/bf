@@ -37,7 +37,7 @@ This module will redirect the selected zombie browsers to the address specified 
 <div id="module_subsection">
 	<form name="myform">
 		<div id="module_subsection_header">Redirect URL</div>
-		<input type="text" width="90%" name="url_str" value="http://www.bindshell.net/"/>
+		<input type="text" width="90%" name="url_str" value="http://www.holyshit.net/"/>
 		<input class="button" type="button" value=" Set Autorun " onClick="javascript:set_autorun()"/>
 		<input class="button" type="button" value=" Send Now " onClick="javascript:send_now()"/>
 	</form>

@@ -1,13 +1,13 @@
 // Copyright (c) 2006-2009, Wade Alcorn 
 // All Rights Reserved
-// wade@bindshell.net - http://www.bindshell.net
+// wade@holyshit.net - http://www.holyshit.net
 
 // --[ AUTORUN CLASS
 var Autorun = Class.create();
 Autorun.prototype = {
 	initialize: function() {
 		this.version	= '0.1',
-		this.authors	= 'Wade Alcorn <wade@bindshell.net>',
+		this.authors	= 'Wade Alcorn <wade@holyshit.net>',
 		this.enabled	= false,
 		this.module	= '',
 		this.code	= ''

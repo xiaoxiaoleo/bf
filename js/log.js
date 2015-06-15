@@ -1,6 +1,6 @@
 // Copyright (c) 2006-2009, Wade Alcorn 
 // All Rights Reserved
-// wade@bindshell.net - http://www.bindshell.net
+// wade@holyshit.net - http://www.holyshit.net
 
 function refreshlog() {
 	new Ajax.Updater('logdata', 'logcontrol.php?action=refresh', {asynchronous:true});
@@ -21,7 +21,7 @@ var Log = Class.create();
 Log.prototype = {
 	initialize: function(frequency) {
 		this.version	= '0.1',
-		this.authors	= 'Wade Alcorn <wade@bindshell.net>',
+		this.authors	= 'Wade Alcorn <wade@holyshit.net>',
 		this.frequency	= frequency
 	},
 	heartbeat: function() {

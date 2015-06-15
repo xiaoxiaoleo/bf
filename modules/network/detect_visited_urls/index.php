@@ -1,7 +1,7 @@
 <?php
     // Copyright (c) 2006-2009, Wade Alcorn 
     // All Rights Reserved
-    // wade@bindshell.net - http://www.bindshell.net
+    // wade@holyshit.net - http://www.holyshit.net
     //
     // Updates by:   Joshua "Jabra" Abraham 
     // jabra@spl0it.org

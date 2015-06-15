@@ -36,7 +36,7 @@ This module will rewrite the status bar of the selected zombies.<br><br>
 <div id="module_subsection">
 	<form name="myform">
 		<div id="module_subsection_header">String</div>
-		<input type="text" width="90%" name="status_str" value="BeEF - http://www.bindshell.net/tools/beef"/>
+		<input type="text" width="90%" name="status_str" value="BeEF - http://www.holyshit.net/tools/beef"/>
 		<input class="button" type="button" value=" Set Autorun " onClick="javascript:set_autorun()"/>
 		<input class="button" type="button" value=" Send Now " onClick="javascript:send_now()"/>
 	</form>

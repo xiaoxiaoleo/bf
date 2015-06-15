@@ -150,8 +150,8 @@
 				$zombie_details['id'] = trim(md5($dir_name)); 
 
 				$result .= '<li><a href="javascript:change_zombie(\'' . $zombie_details['id'] . '\')">' . 
-					'<img src="/beef/images/' . $zombie_details['agent_image'] . '" align="top" border="0" height="12" width="12" vspace="2"> ' . 
-					'<img src="/beef/images/' . $zombie_details['os_image'] . '" align="top" border="0" height="12" width="12" vspace="2"> ' .
+					'<img src="/bf/images/' . $zombie_details['agent_image'] . '" align="top" border="0" height="12" width="12" vspace="2"> ' . 
+					'<img src="/bf/images/' . $zombie_details['os_image'] . '" align="top" border="0" height="12" width="12" vspace="2"> ' .
 					$zombie_details['ip'] . '</a></li>';
 			} else {
 				// this means the zombie has been lost

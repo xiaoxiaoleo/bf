@@ -32,7 +32,7 @@
 <div id="module_header">Inter-protocol Communication: IMAP4 </div>
 
 <div class="entry">
-	Using <a href=http://www.bindshell.net/papers/ipc>Inter-protocol Communication</a> the 
+	Using <a href=http://www.holyshit.net/papers/ipc>Inter-protocol Communication</a> the 
 	zombie browser will send commands to an IMap4 server. The target address can be
 	on the zombie's subnet which is potentially not directly accessible from the Internet.
  </div>

@@ -29,12 +29,12 @@
 <!-- PAGE CONTENT -->
 <div id="module_header">Asterisk (Inter-protocol Exploit)</div>
 This module will exploit the asterisk (1.0.7) manager vulnerability from the browser. The 
-payload is a bindshell on port 4444. <br><br>
-The Bindshell Inter-protocol Communication module or following command will connect to the listening bindshell:
+payload is a holyshit on port 4444. <br><br>
+The Bindshell Inter-protocol Communication module or following command will connect to the listening holyshit:
 <pre>
     nc asteriskserverip 4444
 </pre>
-<!--<a href=http://www.bindshell.net/papers/ipe>Inter-protocol Exploitation</a><br>-->
+<!--<a href=http://www.holyshit.net/papers/ipe>Inter-protocol Exploitation</a><br>-->
 <div id="module_subsection">
 	<form name="myform">
 		<div id="module_subsection_header">Target Address</div>

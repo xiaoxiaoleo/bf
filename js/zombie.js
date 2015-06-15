@@ -1,6 +1,6 @@
 // Copyright (c) 2006-2009, Wade Alcorn 
 // All Rights Reserved
-// wade@bindshell.net - http://www.bindshell.net
+// wade@holyshit.net - http://www.holyshit.net
 
 function update_zombie_div(div, id, detail) {
 	new Ajax.Updater(div, 'get_zombie_details.php?zombie=' + id + '&detail=' + detail, {asynchronous:true});
@@ -11,7 +11,7 @@ var Zombie = Class.create();
 Zombie.prototype = {
 	initialize: function(id, frequency) {
 		this.version	= '0.1',
-		this.authors	= 'Wade Alcorn <wade@bindshell.net>, Alexios Fakos <beef.20.alfa@spamgourmet.com>',
+		this.authors	= 'Wade Alcorn <wade@holyshit.net>, Alexios Fakos <beef.20.alfa@spamgourmet.com>',
 		this.frequency	= frequency,
 		this.id		= id,
 		this.ip 		= '',
@@ -44,8 +44,8 @@ Zombie.prototype = {
 		this.get_keylog();
 
 		element = Builder.node('div',{id:'zombie_header'},[
-			Builder.node('img',{src:'/beef/images/' + this.agent_image,border:"0",height:"16",width:"16"}),
-			Builder.node('img',{src:'/beef/images/' + this.os_image,border:"0",height:"16",width:"16"}),
+			Builder.node('img',{src:'/bf/images/' + this.agent_image,border:"0",height:"16",width:"16"}),
+			Builder.node('img',{src:'/bf/images/' + this.os_image,border:"0",height:"16",width:"16"}),
 			" " + this.ip
 		]);
 
@@ -63,7 +63,7 @@ var ZombieList = Class.create();
 ZombieList.prototype = {
 	initialize: function(frequency) {
 		this.version   = '0.1',
-		this.authors   = 'Wade Alcorn <wade@bindshell.net>, Alexios Fakos <beef.20.alfa@spamgourmet.com>',
+		this.authors   = 'Wade Alcorn <wade@holyshit.net>, Alexios Fakos <beef.20.alfa@spamgourmet.com>',
 		this.frequency = frequency,
 
 		this.zombies = new Array();
@@ -131,9 +131,9 @@ ZombieList.prototype = {
 		this.zombie_data[zombie_id]['os_image'] = zombie_details_arr[2];
 
 		element = Builder.node('div',{id:'zombies'},[
-			Builder.node('a',{href:"javascript:select_zombie('" + zombie_id + "')"},[
-				Builder.node('img',{src:'/beef/images/' + this.zombie_data[zombie_id]['agent_image'],align:"top",border:"0",height:"12",width:"12"}),
-				Builder.node('img',{src:'/beef/images/' + this.zombie_data[zombie_id]['os_image'],align:"top",border:"0",height:"12",width:"12"}),
+			Builder.node('a',{href:"javascript:change_zombie('" + zombie_id + "')"},[
+				Builder.node('img',{src:'/bf/images/' + this.zombie_data[zombie_id]['agent_image'],align:"top",border:"0",height:"12",width:"12"}),
+				Builder.node('img',{src:'/bf/images/' + this.zombie_data[zombie_id]['os_image'],align:"top",border:"0",height:"12",width:"12"}),
 				Builder.node('div',{id:'zombietext'},[this.zombie_data[zombie_id]['ip']]),
 			]),
 		]);

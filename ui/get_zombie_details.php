@@ -1,6 +1,4 @@
 <?php
-
-
 	require_once("../include/globals.inc.php");
 	require_once("../include/ui_zombie.inc.php");
 	require_once("../include/common.inc.php");

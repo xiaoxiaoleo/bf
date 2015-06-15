@@ -38,7 +38,7 @@
 	
 ?>
 	
-	<title>Browser Exploit Framework</title>
+	<title>Browser Infomation Gathering Framework</title>
 
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<script src="js/prototype.js" type="text/javascript"></script>
@@ -64,53 +64,19 @@
 <body>
 
 	<!-- SIDEBAR -->
-	<div id="sidebar">
-		<!-- BEEF HEADER - LINK AND IMAGE-->
-		<div id="header">
-			<center><a href=#>Browser Exploitation Framework</a></center>
-			<h1><div id="beef_icon"><img src="images/beef.gif" onclick="new Effect.Shake('sidebar');"></div> BeEF</h1>
-		</div>
-
-		<!-- Security -->
-        	<div id="sidebar_autorun">
-	        	<div id="header" onclick="new Effect.Pulsate('zombiesdyn');">
-				<h2>Security</h2>
-        		</div>
-        		<div id="content">
-				<!-- DYNAMIC ZOMBIE SECTION -->
-				<div id="autorun_dyn">BeEF has no security by design <br><br></div>
-				<div id="autorun_dyn">Default password is <b>BeEFConfigPass</b> <br><br></div>
-				<div id="autorun_dyn">Edit 'pw.php' in BeEF root to alter the password</div>
-        		</div>
-		</div>
-
-		<!-- INSTALL -->
-        	<div id="sidebar_autorun">
-	        	<div id="header" onclick="new Effect.Pulsate('zombiesdyn');">
-				<!--<h2>Installation</h2>-->
-        		</div>
-        		<div id="content">
-				<!-- DYNAMIC ZOMBIE SECTION -->
-				<!-- <div id="autorun_dyn">BeEF has not been installed</div> -->
-        		</div>
-		</div>
-
-	</div>
 
 	<!-- MAIN RIGHT SECTION -->
 	<div id="main">
 		<div id="page">
-			<div id="module_header">BeEF Configuration</div>
+			<div id="module_header"> Configuration</div>
 				<br>
 				<div id="module_subsection">
         				<form name="configform">
                 				<div id="module_subsection_header">Connection (IP Address or URL)</div>
-						This is the location that the zombies will connect to (do not include the hook directory). This must match the 'ServerName' value in your http.conf for the modules to work.
-                				<input type="text" name="url" value="<?php echo $url; ?>" autocomplete="off"/>
-                				BeEF configuration password
+								<input type="text" name="url" value="<?php echo $url; ?>" autocomplete="off"/>
+                				  Password
                 				<input type="password" name="passwd" value="BeEFConfigPass" autocomplete="off"/>
-                				<input class="button" type="button" value="Apply Config" onClick="javascript:submit_config(configform.url.value, configform.passwd.value)"/>
-						<br>Clicking 'Apply Configuration' will remove/replace these configuration files
+                				<input class="button" type="button" value="Login" onClick="javascript:submit_config(configform.url.value, configform.passwd.value)"/>
         				</form>
 				</div>
 				<div id='config_results'></div>

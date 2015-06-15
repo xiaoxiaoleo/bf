@@ -12,37 +12,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 
-<?php
-	// set the menu css based upon user agent
-	$browser_ua = browser($_SERVER['HTTP_USER_AGENT']);
+    <link rel="stylesheet" type="text/css" href="../css/menu.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 
-	$generic_menu_css = '<link rel="stylesheet" type="text/css" href="../css/menu.css">';
-	$safari_menu_css = '<link rel="stylesheet" type="text/css" href="../css/safari-menu.css">';
-	$ie_menu_css = '<link rel="stylesheet" type="text/css" href="../css/ie-menu.css">';
-	
-	function generate_css_tags($subdirectory) {
-		
-		$menu_css = '	<link rel="stylesheet" type="text/css" href="../css/USERAGENT/menu.css">';
-		$style_css = '	<link rel="stylesheet" type="text/css" href="../css/USERAGENT/style.css">';
-	
-		echo preg_replace('/USERAGENT/', $subdirectory, $menu_css);
-		echo "\n";
-		echo preg_replace('/USERAGENT/', $subdirectory, $style_css);
-		echo "\n";
-	}
-	
-	// set css based on the user agent
-	if(stristr($browser_ua['name'], AGENT_FIREFOX_UA_STR)) { 
-		generate_css_tags('firefox');
-	} elseif(stristr($browser_ua['name'], AGENT_IE_UA_STR)) { 
-		generate_css_tags('ie');
-	} elseif(stristr($browser_ua['name'], AGENT_SAFARI_UA_STR)) { 
-		generate_css_tags('safari');
-	} else { 
-		generate_css_tags('firefox');
-	}
-	
-?>
 	<script src="../js/prototype.js" type="text/javascript"></script>
 	<script src="../js/scriptaculous.js" type="text/javascript"></script>
 	<script src="../js/common.js" type="text/javascript"></script>
@@ -183,16 +155,15 @@
 				</li>
 			</ul>
 			<ul> <!-- OPTIONS MENU -->
-				<li><a href="#">选项</a>
-					<ul>
-					<li><a href="#" onclick="javascript:ar.disable();">Disable Autorun</a></li>
-					<li><a href="#" id="start_exec_menu" onclick="start_executer();">Start Server Polling</a></li>
-					<li><a href="#" id="stop_exec_menu" onclick="stop_executer();" >Stop Server Polling</a></li>
-					</ul>
+				<li><a href="list.php">选择模块</a>
 				</li>
 			</ul>
 			<ul> <!-- HELP MENU -->
 				<li><a href="#" onClick="display_general('exampleusage.php')">演示</a>
+				</li>
+			</ul>
+	      <ul> <!-- LOGOUT MENU -->
+				<li><a href="#" >注销</a>
 				</li>
 			</ul>
 		</div>

